@@ -11,4 +11,9 @@ create table tbl_user_account(
 	email varchar2(50) unique
 );
 
+-- dao만들어서 dao메소드 추가 selectForLogin() 인자랑 리턴타입은 *를 사용하도록 받아라 UserAccountDao에 dao메소드 만들어라
+-- dao에서 매개변수로 처리해야될거 asdf 대신에 ? , 2222대신에 ? <2개> 리턴타입은(결과행) 0~ 최대치 1개냐 n개냐/ 0~1개행임 
+-- 아랫걸 실행하기위해서 
+select * from TBL_USER_ACCOUNT
+where userid='asdf' and password='2222'; 
 
