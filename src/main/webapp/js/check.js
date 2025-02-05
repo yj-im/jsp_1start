@@ -1,5 +1,5 @@
 /**
- * 4_register.jsp 의 form 요소값을 검사
+ * 4_register.jsp 의 form 요소 입력값을 검사
  * 
  */
 // submit 버튼을 실행할 때 처리되는 이벤트 함수

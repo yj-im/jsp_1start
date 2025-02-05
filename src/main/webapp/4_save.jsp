@@ -51,8 +51,8 @@
 		
 		UserAccountDao dao= UserAccountDao.getInstance();	// 데이터베이스랑 연결한 UserAccountDao 싱글톤 객체의 유일한 인스턴스를 불러와서 dao 변수에 줌
 		UserAccountVO vo= new UserAccountVO(username,userid,password,birth,gender,email); // UserAccountVO생성자 호출해서 vo객체를 생성함(저순서로)
-		int result=dao.insert(vo);	// UserAccountDao객체의 인서트 메소드를 가져와서 vo객체의 정보를 삽입한다. 그리고 그결과를 정수값으로 반환
-		if(result==0){	// 인서트 된게 없으면 성공, 있으면 실패
+		int result=dao.insert(vo);	// UserAccountDao객체의 인서트 메소드를 실행하기위해 vo객체의 정보를 전달한다. 그리고 그결과를 정수값으로 반환
+		if(result==1){	// 인서트 된게 없으면 성공, 있으면 실패
 			out.print("<h2>회원 가입 완료!!</h2>");
 			
 		}else{
