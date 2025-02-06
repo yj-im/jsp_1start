@@ -23,15 +23,15 @@ create table tbl_rent_info(
 	roomid varchar2(10) not null,
  	checkin date not null,
 	checkout date not null,
-	nights number(2) not null
-	foreign key(userid) references tbl_user_account(userid)
+	nights number(2) not null,
+	foreign key(userid) references tbl_user_account(userid),
 	foreign key(roomid) references tbl_room(roomid)
 	);
 	
 create table tbl_room(
 	roomid varchar2(10) primary key,
 	room_name varchar2(50) not null,
-	size number(4) not null,
+	room_size number(4) not null,
 	fare number(6) not null,
 	facilities varchar2(500),
 	picture varchar2(500)
