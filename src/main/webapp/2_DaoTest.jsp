@@ -13,7 +13,7 @@
 <body>
 <%
 	TblProductDao dao= TblProductDao.getInstance();
-	List<Product> list = dao.selectByCategory("B1");	// 카테고리값 변경 직접 문자열값 변경
+	List<Product> list=dao.selectByCategory("B1");	// 카테고리값 변경 직접 문자열값 변경
 	// 결과 리스트를 브라우저에 출력하고 싶다. --> table tag
 	// dao 잘 실행되는지 간단 테스트
 	// out.print(list);
